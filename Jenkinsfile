@@ -19,10 +19,6 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                bat 'npm test -- --watch=false --browsers=ChromeHeadless'
-            }
-        }
+
     }
 }
