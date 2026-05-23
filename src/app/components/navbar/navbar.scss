@@ -1,0 +1,25 @@
+@use '../../../styles/variables';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid variables.$neutral-200;
+  border-radius: variables.$radius-10;
+
+  div:nth-child(2) {
+    display: inherit;
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .theme-toggler {
+      margin-left: 20px;
+    }
+  }
+}
